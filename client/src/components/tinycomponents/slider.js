@@ -1,77 +1,49 @@
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
+import React from 'react';
+import Background from '../images/shoes2.jpg';
 
-const items = [
-  {
-    src: require('../images/slide1.jpg'),
-    altText: 'Slide 1',
-    caption: 'Slide 1'
-  },
-  {
-    src: require('../images/slide2.jpg'),
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
-  {
-    src:require('../images/slide3.jpeg'),
-    altText: 'Slide 3',
-    caption: 'Slide 3'
-  }
-];
 
-const Slider = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
 
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
 
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
 
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
+function Slider() {
 
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img src={item.src} alt={item.altText} style={{height:500, width:"100%", objectFit:"cover"}} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-      </CarouselItem>
-    );
-  });
 
-  return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-    >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+
+  return(
+    <div className="container-fluid   px-0 z-depth-1">
+
+
+  <section className="text-center hero text-lg-left white-text grey p-5"
+style={{backgroundImage: `url(${Background})`, backgroundPosition : "20% 60%"}}>
+
+    <div className="row">
+
+      <div className="col-md-6 offset-md-2 pt-5 mt-5">
+
+          <h3 className="font-weight-bold">Shoes for life</h3>
+
+          <h5 className="h5">Highest quality, Solid Promise</h5>
+
+          <p className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+
+          <a href="#" className="btn btn-outline-white btn-md waves-effect" role="button"><i className="fas fa-tag mr-2"></i>Buy Now</a>
+
+      </div>
       
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
-  );
+
+    </div>
+   
+
+  </section>
+ 
+
+
+</div>
+
+  )
 }
+
+
 
 export default Slider;

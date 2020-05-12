@@ -1,55 +1,99 @@
+body {
+  background: whitesmoke;
+}
+
+.m_text {
+  color: wheat;
+}
 
 /* Nav */
-.active{
-    background-color: tomato !important;
+#topnav {
+  background-color: #986e51;
+  width: 100%;
+  z-index: 1;
 }
 
-
-
-
-
-
-
-
-
-/* slider start */
-
-
-.vert .carousel-item-next.carousel-item-left,
-.vert .carousel-item-prev.carousel-item-right {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+.active {
+  color: wheat !important;
 }
 
-.vert .carousel-item-next,
-.vert .active.carousel-item-right {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100% 0);
+/* hero starts */
+.hero {
+  height: 600px;
 }
 
-.vert .carousel-item-prev,
-.vert .active.carousel-item-left {
--webkit-transform: translate3d(0,-100%, 0);
-        transform: translate3d(0,-100%, 0);
+.hero h3 {
+  color: wheat;
 }
 
+.hero h5 {
+  color: whitesmoke;
+}
 
+.hero a {
+  background-color: wheat;
+}
 
-/* slider ends */
+.hero a:hover {
+  background-color: #986e51;
+}
 
+.hero a:active {
+  border: 2px inset wheat;
+}
 
+/* hero ends */
+/* category starts */
+.longcategory {
+  background-color: #f3f3f3 !important;
+  height: 100vh;
+  width: 200px;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  padding: 10px;
+  overflow: auto;
+  border-right: 1px solid #986e51;
+}
 
+.longcategory h6 {
+  color: #986e51;
+  text-align: center;
+  font-size: 15px;
+}
 
+.longcategory h5 {
+  color: #986e51;
+  text-align: center;
+  font-size: 16px;
+}
 
+#sidebar {
+  background-color: wheat;
+  padding: 30px;
+}
 
+.dropDiv {
+  height: 200px;
+  background-color: #9c0c5c;
+  position: aboslute;
+}
 
+/* home starts */
+.maintitle {
+  padding-top: 40px;
+  text-align: center;
+  color: red;
+}
 
+.subtitle {
+  text-align: center;
+}
 
+/* home ends */
 /* Footer starts */
 #mainfooter {
-    background-color: #343a40;
-    color:wheat;
+  background-color: #410023;
+  color: wheat;
 }
-
-
-/* Footer ends */
+/*# sourceMappingURL=App.css.map */

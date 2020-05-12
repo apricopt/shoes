@@ -1,5 +1,5 @@
-GET http://localhost:4320/
-zack-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6IjVlYWZlYzc3ZDBhOGM3MjdmYjNmYzVjMiIsImlhdCI6MTU4ODYzNDkxMn0.qz-rHhzhVYapFcWY-7KjYNCBVY4Xe1ZBJdGWJ8P-_ss
+GET http://localhost:5000/api/user
+
 
 
 
@@ -7,12 +7,12 @@ zack-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6IjVlYWZlYzc3ZDBhOGM3Mjdm
 ### post request for user insert
 
 
-POST https://fierce-caverns-05486.herokuapp.com/api/user/register 
+POST http://localhost:5000/api/user/register
 content-type: application/json
 
 {
     "name": "ejaaz",
-    "email": "ejaaz@gmail.com",
+    "email": "ejaaaz@gmail.com",
     "password": "abc1214",
     "lastname": "zohaib"
 }
@@ -21,7 +21,7 @@ content-type: application/json
 
 ### post for login check 
 
-POST http://localhost:4320/api/user/login
+POST http://localhost:5000/api/user/login
 content-type: application/json
 
 {   

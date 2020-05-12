@@ -1,0 +1,143 @@
+$maincolorsoft: wheat;
+$maincolorhard: #986e51;
+
+
+
+
+body {
+    background:whitesmoke;
+}
+
+.m_text {
+    color:wheat;
+}
+/* Nav */
+#topnav {
+    background-color: #986e51;
+    // height: 50px;
+    // position: fixed;
+    // top: 0px;
+    width: 100%;
+    z-index: 1;
+
+    // .badge {
+    //     font-size: 4px;
+    // }
+    // .btn-bag {
+        
+    // }
+    
+}
+
+
+.active{
+    color: wheat!important;
+}
+
+/* hero starts */
+
+ .hero {
+     height: 600px;
+     h3 {
+        color:wheat;
+    }
+    h5 {
+        color: whitesmoke;
+    }
+    a {
+        background-color: wheat;
+        &:hover {
+            background-color: $maincolorhard;
+        }
+        &:active {
+            border: 2px inset $maincolorsoft ;
+        }
+    }
+   
+ }
+
+ 
+/* hero ends */
+
+
+/* category starts */
+
+
+.longcategory {
+    background-color: #f3f3f3 !important;
+    height: 100vh;
+    width:200px;
+    position: sticky !important;
+    top: 0 !important;
+    padding: 10px;
+    overflow: auto;
+    border-right:1px solid $maincolorhard;
+    h6  {
+        color: $maincolorhard;
+        text-align: center;
+        font-size: 15px;
+    }
+    h5  {
+        color: $maincolorhard;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    
+}
+
+
+// sidebar starts
+
+#sidebar {
+    background-color: $maincolorsoft;
+    padding: 30px;
+    
+}
+
+
+
+// sidebar ends
+
+
+
+
+
+.dropDiv {
+    height: 200px;
+    background-color: #9c0c5c;
+    position: aboslute;
+}
+
+
+/* home starts */
+
+
+.maintitle {
+    padding-top:40px;
+    text-align: center;
+    color: red;
+}
+
+.subtitle {
+    text-align: center;
+    
+    
+}
+
+
+
+/* home ends */
+
+
+
+
+
+
+
+
+/* Footer starts */
+#mainfooter {
+    background-color: #410023;
+    color:wheat;
+}
